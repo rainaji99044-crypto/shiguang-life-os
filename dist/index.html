@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fffaf3" />
+  <meta name="description" content="把计划、成长、灵感与生活放进一个温柔的个人工作台。" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>拾光 Life OS</title>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="desktop-sidebar" aria-label="主导航">
+      <a class="brand" href="#home" aria-label="拾光首页"><span class="brand-mark"><span data-icon="sparkles"></span></span><span>拾光</span></a>
+      <nav class="side-nav" data-nav></nav>
+      <div class="sidebar-note"><span data-icon="cloud-off"></span><div><strong>本地模式</strong><small>数据保存在当前设备</small></div></div>
+    </aside>
+
+    <main id="app" tabindex="-1"></main>
+
+    <button class="fab" id="quickAdd" aria-label="快捷添加"><span data-icon="plus"></span></button>
+    <nav class="bottom-nav" data-nav aria-label="主导航"></nav>
+  </div>
+
+  <div class="modal-layer" id="modalLayer" hidden>
+    <button class="modal-backdrop" data-close-modal aria-label="关闭"></button>
+    <section class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+      <div class="sheet-handle"></div>
+      <div id="sheetContent"></div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

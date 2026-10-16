@@ -1,0 +1,12 @@
+{
+  "name": "拾光 Life OS",
+  "short_name": "拾光",
+  "description": "移动优先的个人生活与工作台",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fffaf3",
+  "theme_color": "#fffaf3",
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
