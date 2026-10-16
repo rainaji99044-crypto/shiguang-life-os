@@ -1,7 +1,7 @@
 {
   "name": "拾光 Life OS",
   "short_name": "拾光",
-  "description": "简单记录、清晰规划、持续积累的个人 Life OS",
+  "description": "本地优先、可独立使用的个人 Life OS",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#fffaf3",
