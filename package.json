@@ -1,9 +1,10 @@
 {
   "name": "shiguang-life-os",
   "private": true,
-  "version": "2.6.0",
+  "version": "2.7.0",
   "scripts": {
     "start": "node server.mjs",
-    "check": "node --check app.js && node --check sw.js"
+    "check": "node --check app.js && node --check sw.js",
+    "test:smoke": "node tests/diary-smoke.mjs"
   }
 }
