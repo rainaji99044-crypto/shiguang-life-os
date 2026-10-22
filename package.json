@@ -1,7 +1,7 @@
 {
   "name": "shiguang-life-os",
   "private": true,
-  "version": "2.7.2",
+  "version": "2.7.3",
   "scripts": {
     "start": "node server.mjs",
     "check": "node --check app.js && node --check sw.js",
