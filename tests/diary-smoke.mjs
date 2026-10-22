@@ -37,6 +37,7 @@ assert.equal(elements.modalLayer.hidden,false);
 assert.match(elements.sheetContent.innerHTML,/diary-editor/);
 assert.match(elements.sheetContent.innerHTML,/写下一句话，也很好/);
 assert.match(elements.sheetContent.innerHTML,/心情与标签/);
+assert.match(elements.sheetContent.innerHTML,/textarea name="text" wrap="soft"/);
 assert.doesNotMatch(elements.sheetContent.innerHTML,/diary-menu|•••/);
 vm.runInContext("location.hash='#study';activePage='study';activeTab.study='graduate';activeTab.graduate='exams';render()",context);
 assert.match(elements.app.innerHTML,/考试规划/);
